@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "curso": "Programación Web Frontend",
+    "descripcion": "Domina las bases del desarrollo frontend moderno creando sitios web interactivos y responsivos desde cero con HTML5, CSS3 y JavaScript moderno.",
+    "tiempo": "45 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1542838132-92c53300491e?w=300"
+  },
+  {
+    "id": 2,
+    "curso": "Machine Learning con Python",
+    "descripcion": "Aprende a entrenar, evaluar y desplegar modelos predictivos utilizando bibliotecas líderes de la industria como Scikit-Learn y TensorFlow.",
+    "tiempo": "60 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=300"
+  },
+  {
+    "id": 3,
+    "curso": "Análisis Exploratorio de Datos (EDA) con Python",
+    "descripcion": "Transforma datos crudos en información valiosa aplicando técnicas estadísticas y de visualización avanzada con Pandas, NumPy y Seaborn.",
+    "tiempo": "40 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300"
+  },
+  {
+    "id": 4,
+    "curso": "Estadística para Ciencia de Datos",
+    "descripcion": "Comprende los fundamentos matemáticos y probabilísticos esenciales para interpretar modelos de Machine Learning y tomar decisiones basadas en datos.",
+    "tiempo": "40 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=300"
+  },
+  {
+    "id": 5,
+    "curso": "Programación Web Backend con Node.js",
+    "descripcion": "Construye APIs robustas, escalables y seguras del lado del servidor utilizando Node.js, Express y bases de datos relacionales y no relacionales.",
+    "tiempo": "50 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=300"
+  },
+  {
+    "id": 6,
+    "curso": "APIs de Alto Rendimiento con FastAPI",
+    "descripcion": "Desarrolla microservicios y APIs ultrarrápidas en Python aprovechando las ventajas de FastAPI, Pydantic y documentación automática con Swagger.",
+    "tiempo": "35 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=300"
+  },
+  {
+    "id": 7,
+    "curso": "Bases de Datos SQL y NoSQL",
+    "descripcion": "Aprende a diseñar, modelar y consultar eficazmente bases de datos relacionales (PostgreSQL) y no relacionales (MongoDB).",
+    "tiempo": "40 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=300"
+  },
+  {
+    "id": 8,
+    "curso": "Desarrollo Móvil con React Native",
+    "descripcion": "Crea aplicaciones nativas para iOS y Android utilizando JavaScript y React, optimizando el rendimiento y reutilizando código.",
+    "tiempo": "55 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300"
+  },
+  {
+    "id": 9,
+    "curso": "DevOps y Contenedores con Docker",
+    "descripcion": "Automatiza el despliegue de aplicaciones, gestiona entornos virtuales y domina la contenedorización profesional con Docker y Docker Compose.",
+    "tiempo": "30 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1618401471353-b98aedd04e11?w=300"
+  },
+  {
+    "id": 10,
+    "curso": "Introducción a la Ciberseguridad",
+    "descripcion": "Identifica vulnerabilidades comunes en sistemas y aplicaciones web, y aprende las mejores prácticas para mitigar riesgos de seguridad informáticas.",
+    "tiempo": "35 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=300"
+  },
+  {
+    "id": 11,
+    "curso": "Cloud Computing con AWS",
+    "descripcion": "Despliega, administra y escala infraestructura en la nube utilizando los servicios principales de Amazon Web Services (EC2, S3, RDS).",
+    "tiempo": "50 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=300"
+  },
+  {
+    "id": 12,
+    "curso": "UI/UX Design Essentials",
+    "descripcion": "Diseña interfaces intuitivas y experiencias de usuario memorables aplicando principios de usabilidad, prototipado y pruebas con Figma.",
+    "tiempo": "35 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=300"
+  },
+  {
+    "id": 13,
+    "curso": "Deep Learning Avanzado",
+    "descripcion": "Explora redes neuronales profundas, procesamiento de lenguaje natural (NLP) y visión por computadora utilizando PyTorch.",
+    "tiempo": "65 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1677442136019-21780efad99a?w=300"
+  },
+  {
+    "id": 14,
+    "curso": "Git y Control de Versiones Profesional",
+    "descripcion": "Domina el flujo de trabajo con Git, la colaboración en equipo mediante GitHub y la gestión de ramas para proyectos de software robustos.",
+    "tiempo": "20 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=300"
+  },
+  {
+    "id": 15,
+    "curso": "Python desde Cero",
+    "descripcion": "Adquiere las bases de la programación orientada a objetos, sintaxis limpia y lógica computacional usando uno de los lenguajes más populares.",
+    "tiempo": "30 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=300"
+  },
+  {
+    "id": 16,
+    "curso": "Big Data con Spark y Hadoop",
+    "descripcion": "Procesa y analiza volúmenes masivos de datos distribuidos en clústeres utilizando Apache Spark, PySpark y Hadoop Ecosystem.",
+    "tiempo": "50 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=300"
+  },
+  {
+    "id": 17,
+    "curso": "Desarrollo de Videojuegos con Unity",
+    "descripcion": "Crea videojuegos 2D y 3D interactivos desde cero programando lógicas en C# dentro del motor gráfico Unity.",
+    "tiempo": "60 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=300"
+  },
+  {
+    "id": 18,
+    "curso": "Arquitectura de Software y Clean Code",
+    "descripcion": "Aprende patrones de diseño, principios SOLID y técnicas de refactorización para escribir código limpio, mantenible y escalable.",
+    "tiempo": "40 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=300"
+  },
+  {
+    "id": 19,
+    "curso": "Business Intelligence y Power BI",
+    "descripcion": "Conecta múltiples fuentes de datos, modela información y diseña dashboards ejecutivos interactivos para la toma de decisiones empresariales.",
+    "tiempo": "35 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300"
+  },
+  {
+    "id": 20,
+    "curso": "Automatización de Pruebas (QA Testing)",
+    "descripcion": "Garantiza la calidad del software implementando pruebas unitarias, de integración y end-to-end con herramientas como Selenium y Jest.",
+    "tiempo": "35 horas",
+    "precio": 250,
+    "imagen": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?w=300"
+  }
+]

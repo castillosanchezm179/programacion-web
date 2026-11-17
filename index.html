@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeVarsity | Plataforma de Cursos de Sistemas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="bi bi-code-slash"></i> CodeVarsity
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/rutas.html">Rutas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/comunidad.html">Comunidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/precios.html">Precios</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <span class="text-light d-none d-lg-block me-3" id="navUserName">
+                        <i class="bi bi-person-circle"></i> Invitado
+                    </span>
+                    <button class="btn btn-outline-light btn-sm" id="btnLogin">Iniciar Sesión</button>
+                    <button class="btn btn-primary btn-sm" id="btnRegistro">Regístrate</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1732209556962-df3c1334bc47?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Programación" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-5 fw-bold">Desarrollo Web Full Stack</h2>
+                    <p class="lead">Domina React, Spring Boot y bases de datos relacionales desde cero.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1920&auto=format&fit=crop" class="d-block w-100" alt="Java" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-5 fw-bold">Especialización en Java SE &amp; EE</h2>
+                    <p class="lead">Lleva tus proyectos al siguiente nivel con arquitecturas empresariales.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1920&auto=format&fit=crop" class="d-block w-100" alt="Trabajo en equipo" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-5 fw-bold">Comunidad Académica</h2>
+                    <p class="lead">Conecta con otros estudiantes y resuelve retos reales.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1920&auto=format&fit=crop" class="d-block w-100" alt="Estudiantes" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-5 fw-bold">Ciberseguridad y Redes</h2>
+                    <p class="lead">Protege infraestructuras y domina el hacking ético.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1920&auto=format&fit=crop" class="d-block w-100" alt="Tecnología avanzada" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-5 fw-bold">Inteligencia Artificial</h2>
+                    <p class="lead">Aprende machine learning y deep learning con Python.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+
+    <section id="cursos" class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Áreas de Formación en Ingeniería</h2>
+            <p class="text-muted">Desarrolla las competencias técnicas que demanda el mercado laboral actual.</p>
+        </div>
+        <div id="featuredCourseFeedback" class="alert d-none" role="status"></div>
+        <div id="featuredCourses" class="row g-4" aria-live="polite"></div>
+        <div class="text-center mt-4">
+            <a href="pages/cursos.html" class="btn btn-outline-primary">Ver todos los cursos</a>
+        </div>
+    </section>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="loginModalLabel">Iniciar sesión</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">Accede con tu cuenta para gestionar la plataforma.</p>
+                    <div id="loginFeedback" class="alert d-none" role="alert"></div>
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Correo</label>
+                            <input type="email" id="loginEmail" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Contraseña</label>
+                            <input type="password" id="loginPassword" class="form-control" required />
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="registerModalLabel">Registro de usuario</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">Crea una cuenta para acceder a la plataforma.</p>
+                    <div id="registerFeedback" class="alert d-none" role="alert"></div>
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Nombre</label>
+                            <input type="text" id="registerName" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Correo</label>
+                            <input type="email" id="registerEmail" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Contraseña</label>
+                            <input type="password" id="registerPassword" class="form-control" minlength="8" required />
+                            <div class="form-text">Usa al menos 8 caracteres.</div>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Registrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="sessionAlert" class="alert mt-4 d-none" role="alert"></div>
+    </div>
+
+    <section id="dashboardSection" class="container py-5 d-none">
+        <div class="dashboard-shell">
+            <div class="dashboard-header">
+                <div>
+                    <span class="dashboard-brand"><i class="bi bi-code-slash"></i> CodeVarsity</span>
+                    <div class="dashboard-subtitle">Panel de administración</div>
+                </div>
+                <div class="dashboard-user-box">
+                    <div id="dashboardUserName" class="fw-bold">Usuario</div>
+                    <div id="dashboardUserRole" class="small text-muted">Perfil</div>
+                    <div id="currentDateTime" class="small text-muted mt-2"></div>
+                </div>
+            </div>
+            <nav class="dashboard-nav" aria-label="Menu principal">
+                <button class="btn dashboard-nav-btn active" data-target="inicio"><i class="bi bi-house"></i> Inicio</button>
+                <button class="btn dashboard-nav-btn" data-target="mis-cursos" data-student-only><i class="bi bi-journal-check"></i> Mis Cursos</button>
+                <button class="btn dashboard-nav-btn" data-target="cursos" data-admin-only><i class="bi bi-mortarboard"></i> Cursos (Admin)</button>
+                <button class="btn dashboard-nav-btn" data-target="configuracion" data-admin-only><i class="bi bi-people"></i> Usuarios (Admin)</button>
+                <button class="btn dashboard-nav-btn" data-target="github"><i class="bi bi-github"></i> GitHub Tech</button>
+                <button class="btn dashboard-nav-btn" data-target="juego" data-student-only><i class="bi bi-controller"></i> Reto Dev</button>
+                <button class="btn dashboard-nav-btn" data-target="password"><i class="bi bi-key"></i> Contraseña</button>
+                <button class="btn btn-outline-danger dashboard-nav-btn" id="logoutButton"><i class="bi bi-box-arrow-right"></i> Salir</button>
+            </nav>
+
+            <div class="dashboard-content">
+                <section id="panel-inicio" class="content-panel active-panel">
+                    <div class="welcome-card">
+                        <div class="welcome-icon"><i class="bi bi-person-badge"></i></div>
+                        <div>
+                            <h3 class="fw-bold mb-2">Bienvenido/a</h3>
+                            <p id="welcomeMessage">Has ingresado correctamente a la plataforma CodeVarsity.</p>
+                        </div>
+                    </div>
+                    <div class="row g-3 mt-2">
+                        <div class="col-md-4">
+                            <div class="info-box">
+                                <span class="info-label">Usuario</span>
+                                <strong id="panelUserName">-</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info-box">
+                                <span class="info-label">Perfil</span>
+                                <strong id="panelUserRole">-</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info-box">
+                                <span class="info-label">Fecha y hora</span>
+                                <strong id="panelDateTime">-</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="panel-mis-cursos" class="content-panel d-none" data-student-only>
+                    <div class="section-header d-flex justify-content-between align-items-center flex-wrap gap-2">
+                        <div>
+                            <h4><i class="bi bi-journal-bookmark-fill text-primary"></i> Mis Cursos Matriculados</h4>
+                            <p class="text-muted mb-0">Gestiona tu avance académico guardado en SQLite. Al llegar al 100% podrás obtener tu Certificado Digital.</p>
+                        </div>
+                        <a href="pages/cursos.html" class="btn btn-outline-primary btn-sm"><i class="bi bi-plus-circle"></i> Explorar Catálogo</a>
+                    </div>
+                    <div id="studentCoursesFeedback" class="alert d-none mt-3" role="status"></div>
+                    <div id="myCoursesList" class="row g-3 mt-3"></div>
+                </section>
+
+                <section id="panel-github" class="content-panel d-none">
+                    <div class="section-header d-flex justify-content-between align-items-center flex-wrap gap-2">
+                        <div>
+                            <h4><i class="bi bi-github"></i> Novedades y Repositorios en Tendencia (GitHub API)</h4>
+                            <p class="text-muted mb-0">Consumiendo en vivo la API pública de GitHub para futuros ingenieros de sistemas.</p>
+                        </div>
+                        <button id="loadGithubButton" class="btn btn-primary btn-sm"><i class="bi bi-arrow-clockwise"></i> Actualizar Repositorios</button>
+                    </div>
+                    <div id="githubFeedback" class="alert d-none mt-3" role="status"></div>
+                    <div id="githubRepoList" class="row g-3 mt-3"></div>
+                </section>
+
+                <section id="panel-juego" class="content-panel d-none" data-student-only>
+                    <div class="section-header">
+                        <h4><i class="bi bi-controller text-primary"></i> Mini-Juego: Reto Dev (Persistencia en LocalStorage)</h4>
+                        <p class="text-muted mb-0">Pon a prueba tus conocimientos sobre Git, Linux y Programación Web. ¡Tus récords se guardan en el LocalStorage de tu navegador!</p>
+                    </div>
+                    
+                    <div class="card shadow-sm border-0 mt-3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4 pb-3 border-bottom">
+                                <div>
+                                    <span class="text-muted small">Puntaje de la Partida:</span>
+                                    <h3 class="fw-bold text-primary mb-0" id="gameCurrentScore">0</h3>
+                                </div>
+                                <div>
+                                    <span class="text-muted small"><i class="bi bi-trophy text-warning"></i> Récord en LocalStorage:</span>
+                                    <h3 class="fw-bold text-success mb-0" id="gameHighScore">0</h3>
+                                </div>
+                                <div>
+                                    <span class="text-muted small">Partidas Jugadas:</span>
+                                    <h4 class="fw-bold text-secondary mb-0" id="gameTotalPlayed">0</h4>
+                                </div>
+                                <button id="btnResetGameStorage" class="btn btn-outline-secondary btn-sm" title="Borrar récords guardados en este navegador">
+                                    <i class="bi bi-trash"></i> Reiniciar Récord Local
+                                </button>
+                            </div>
+
+                            <div id="gameQuestionContainer">
+                                <span class="badge bg-primary mb-2" id="gameQuestionCategory">Pregunta 1</span>
+                                <h5 class="fw-bold mb-3" id="gameQuestionText">Cargando pregunta...</h5>
+                                <div id="gameOptionsContainer" class="d-grid gap-2 mb-3"></div>
+                                <div id="gameFeedback" class="alert d-none" role="alert"></div>
+                                <button id="btnNextQuestion" class="btn btn-primary d-none w-100">Siguiente Pregunta <i class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="panel-cursos" class="content-panel d-none" data-admin-only>
+                    <div class="section-header">
+                        <h4>Gestión del catálogo de cursos</h4>
+                        <p class="text-muted mb-0">Los cambios se guardan en la base de datos SQLite.</p>
+                    </div>
+                    <div id="courseManagerFeedback" class="alert d-none" role="status"></div>
+                    <form id="courseForm" class="row g-3 mb-4">
+                        <input type="hidden" id="courseId" />
+                        <div class="col-md-6">
+                            <label for="courseName" class="form-label">Nombre del curso</label>
+                            <input type="text" id="courseName" class="form-control" maxlength="120" required />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="courseDuration" class="form-label">Duración</label>
+                            <input type="text" id="courseDuration" class="form-control" maxlength="40" required />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="coursePrice" class="form-label">Precio</label>
+                            <input type="number" id="coursePrice" class="form-control" min="0" step="0.01" required />
+                        </div>
+                        <div class="col-md-8">
+                            <label for="courseDescription" class="form-label">Descripción</label>
+                            <textarea id="courseDescription" class="form-control" maxlength="1000" rows="2" required></textarea>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="courseImage" class="form-label">URL de imagen</label>
+                            <input type="url" id="courseImage" class="form-control" placeholder="https://..." required />
+                        </div>
+                        <div class="col-12 d-flex gap-2">
+                            <button id="courseSubmitButton" type="submit" class="btn btn-primary">Agregar curso</button>
+                            <button id="cancelCourseEdit" type="button" class="btn btn-outline-secondary d-none">Cancelar edición</button>
+                        </div>
+                    </form>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover align-middle">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Curso</th>
+                                    <th>Duración</th>
+                                    <th>Precio</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="courseTableBody"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="panel-configuracion" class="content-panel d-none" data-admin-only>
+                    <div class="section-header">
+                        <h4>Configuración de usuarios</h4>
+                    </div>
+                    <div id="userManagerFeedback" class="alert d-none" role="status"></div>
+                    <form id="adminUserForm" class="row g-3 mb-4">
+                        <input type="hidden" id="adminUserId" />
+                        <div class="col-md-3">
+                            <label for="adminUserName" class="form-label">Nombre</label>
+                            <input type="text" id="adminUserName" class="form-control" minlength="3" maxlength="80" required />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="adminUserEmail" class="form-label">Correo</label>
+                            <input type="email" id="adminUserEmail" class="form-control" required />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="adminUserPassword" class="form-label">Contraseña inicial</label>
+                            <input type="password" id="adminUserPassword" class="form-control" minlength="8" required />
+                        </div>
+                        <div class="col-md-2">
+                            <label for="adminUserRole" class="form-label">Perfil</label>
+                            <select id="adminUserRole" class="form-select">
+                                <option value="global">Usuario global</option>
+                                <option value="admin">Administrador</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1 d-flex align-items-end">
+                            <button id="adminUserSubmit" type="submit" class="btn btn-primary w-100">Crear</button>
+                        </div>
+                        <div class="col-12">
+                            <button id="cancelAdminUserEdit" type="button" class="btn btn-outline-secondary d-none">Cancelar edición</button>
+                        </div>
+                    </form>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover align-middle">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Correo</th>
+                                    <th>Perfil</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="userTableBody"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="panel-password" class="content-panel d-none">
+                    <div class="section-header">
+                        <h4>Cambiar contraseña</h4>
+                    </div>
+                    <form id="passwordForm" class="row g-3">
+                        <div class="col-md-4">
+                            <label for="currentPassword" class="form-label">Contraseña actual</label>
+                            <input type="password" id="currentPassword" class="form-control" required />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="newPassword" class="form-label">Nueva contraseña</label>
+                            <input type="password" id="newPassword" class="form-control" required />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
+                            <input type="password" id="confirmPassword" class="form-control" required />
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Actualizar contraseña</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-code-slash text-primary"></i> CodeVarsity</h4>
+                    <p class="text-secondary">Elevando el nivel técnico de los futuros ingenieros de sistemas. Aprende haciendo, diseña para escalar.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-secondary text-decoration-none">Acerca de</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Contacto</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Términos y condiciones</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-3">Síguenos</h5>
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#" class="text-secondary"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-secondary"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-secondary"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-secondary"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Únete a nuestra próxima cohorte</h5>
+                    <p class="text-secondary small">Recibe información sobre becas universitarias y nuevos cursos.</p>
+                    <form id="registroForm" class="d-flex flex-column gap-2">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-person"></i></span>
+                            <input type="text" class="form-control" id="nombreInput" placeholder="Nombre completo" required />
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Correo institucional" required />
+                            <button class="btn btn-primary" type="submit">Inscribirme</button>
+                        </div>
+                        <div id="formFeedback" class="form-text d-none"></div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary" />
+            <p class="text-center text-secondary small mb-0">&copy; 2026 CodeVarsity. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Certificado Digital de Aprobación -->
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-body p-0">
+                    <div class="certificate-container p-4 p-md-5 text-center" id="printableCertificate">
+                        <div class="certificate-border p-4">
+                            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+                                <i class="bi bi-code-slash text-primary fs-2"></i>
+                                <span class="fw-bold fs-4 text-dark">CodeVarsity</span>
+                            </div>
+                            <h6 class="text-uppercase text-muted fw-bold mb-3" style="letter-spacing: 2px;">Certificado de Aprobación</h6>
+                            <p class="text-secondary small mb-1">Se certifica formalmente que:</p>
+                            <h2 class="fw-bold text-primary my-3" id="certStudentName">Nombre del Estudiante</h2>
+                            <p class="text-secondary mb-2">ha completado satisfactoriamente el 100% de los requisitos del curso:</p>
+                            <h4 class="fw-bold text-dark mb-3" id="certCourseName">Nombre del Curso</h4>
+                            <p class="small text-muted mb-4">Con una intensidad académica de <span id="certCourseDuration" class="fw-bold">40 horas</span> de formación técnica.</p>
+                            <hr class="w-50 mx-auto my-3" />
+                            <div class="d-flex justify-content-around align-items-center mt-4">
+                                <div>
+                                    <div class="fw-bold small" id="certDate">Fecha</div>
+                                    <div class="text-muted small">Fecha de Expedición</div>
+                                </div>
+                                <div>
+                                    <span class="badge bg-success-subtle text-success border border-success px-3 py-2">
+                                        <i class="bi bi-patch-check-fill"></i> Registrado en SQLite
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between bg-light">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="btnPrintCertificate">
+                        <i class="bi bi-printer"></i> Imprimir Diploma
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/game/game.js"></script>
+    <script src="js/github.js"></script>
+    <script src="js/enrollments.js"></script>
+    <script src="js/courses.js"></script>
+    <script src="js/admin-users.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/app-events.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "codevarsity",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plataforma académica CodeVarsity con API REST y SQLite",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.1.0",
+    "sqlite3": "^6.0.1"
+  }
+}

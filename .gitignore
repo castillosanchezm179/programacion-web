@@ -1,0 +1,7 @@
+node_modules/
+.env
+.env.*
+server/data/codevarsity.sqlite
+server/data/codevarsity.sqlite-journal
+server/data/codevarsity.sqlite-shm
+server/data/codevarsity.sqlite-wal

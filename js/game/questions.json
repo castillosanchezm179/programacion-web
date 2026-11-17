@@ -1,0 +1,38 @@
+[
+  {
+    "category": "Control de Versiones (Git)",
+    "question": "¿Qué comando se utiliza para registrar permanentemente los cambios en el historial de Git?",
+    "options": ["git push origin", "git commit -m \"mensaje\"", "git stage add", "git checkout -b"],
+    "correct": 1
+  },
+  {
+    "category": "Bases de Datos (SQL)",
+    "question": "¿Cuál sentencia SQL se utiliza para modificar datos existentes en una tabla?",
+    "options": ["INSERT INTO", "ALTER TABLE", "UPDATE ... SET", "SELECT MODIFY"],
+    "correct": 2
+  },
+  {
+    "category": "Persistencia Web",
+    "question": "¿Cuál método de LocalStorage almacena un valor asociado a una clave en el navegador?",
+    "options": ["localStorage.save()", "localStorage.setItem()", "localStorage.put()", "localStorage.write()"],
+    "correct": 1
+  },
+  {
+    "category": "Protocolo HTTP",
+    "question": "¿Qué código de estado HTTP indica que un recurso fue creado exitosamente en el servidor?",
+    "options": ["200 OK", "201 Created", "204 No Content", "304 Not Modified"],
+    "correct": 1
+  },
+  {
+    "category": "Seguridad y Roles",
+    "question": "¿Qué código de estado debe retornar la API cuando un usuario no tiene permisos de administrador?",
+    "options": ["401 Unauthorized", "403 Forbidden", "404 Not Found", "500 Internal Error"],
+    "correct": 1
+  },
+  {
+    "category": "Arquitectura Cliente-Servidor",
+    "question": "¿Por qué las validaciones de permisos deben ejecutarse obligatoriamente en el servidor?",
+    "options": ["Para no ocupar memoria RAM en la computadora del usuario", "Porque un cliente malicioso puede enviar peticiones HTTP directas ignorando el frontend", "Para acelerar la velocidad del navegador", "Porque CSS y HTML no permiten usar condicionales if"],
+    "correct": 1
+  }
+]
